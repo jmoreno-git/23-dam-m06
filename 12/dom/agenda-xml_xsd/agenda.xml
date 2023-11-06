@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="agenda.xsd">
+    <contacte DNI="Z12345678">
+      <nom>John</nom>
+      <cognoms>Doe</cognoms>
+      <telefon>935555551</telefon>
+      <adreça>
+        <via>Carrer</via>
+        <nomvia>Major</nomvia>
+        <numero>1</numero>
+        <pis>1</pis>
+        <porta>a</porta>
+        <poblacio>Barcelona</poblacio>
+        <codipostal>08001</codipostal>
+      </adreça>
+    </contacte>
+    <contacte DNI="A23456789">
+      <nom>Angela</nom>
+      <cognoms>Laurence</cognoms>
+      <telefon>935555552</telefon>
+      <adreça>
+        <via>Avinguda</via>
+        <nomvia>Llibertat</nomvia>
+        <numero>2</numero>
+        <pis>1</pis>
+        <porta>b</porta>
+        <poblacio>Tarragona</poblacio>
+        <codipostal>08002</codipostal>
+      </adreça>
+    </contacte>
+</agenda>

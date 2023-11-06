@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:simpleType name="dni">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][0-9]{8}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="phone">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[6-9][0-9]{8}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipusvia">
+  <xs:restriction base="xs:string">
+      <xs:enumeration value="Carrer"/>
+      <xs:enumeration value="Avinguda"/>
+      <xs:enumeration value="Plaça"/>
+      <xs:enumeration value="Rambla"/>
+  </xs:restriction> 
+</xs:simpleType>
+
+<xs:simpleType name="cp">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{5}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="addr">
+    <xs:sequence>
+        <xs:element name="via" type="tipusvia"/>
+        <xs:element name="nomvia" type="xs:string"/>
+        <xs:element name="numero" type="xs:integer"/>
+        <xs:element name="pis" type="xs:string"/>
+        <xs:element name="porta" type="xs:string"/>
+        <xs:element name="poblacio" type="xs:string"/>
+        <xs:element name="codipostal" type="cp"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persona">
+  <xs:sequence>
+    <xs:element name="nom" type="xs:string"/>
+    <xs:element name="cognoms" minOccurs="1" maxOccurs="2" type="xs:string"/>
+    <xs:element name="telefon" type="phone"/>
+    <xs:element name="adreça" type="addr"/>
+  </xs:sequence>
+  <xs:attribute name="DNI" type="xs:ID" use="required"/>
+</xs:complexType>
+
+  <xs:element name="agenda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="contacte" type="persona" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

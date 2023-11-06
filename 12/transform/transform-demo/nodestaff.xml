@@ -1,0 +1,10 @@
+<staff nif="1A">
+        <firstname>Peter</firstname>
+        <lastname>Johnson</lastname>
+        <nickname>pjohnson</nickname>
+        <salary>1000.0</salary>
+        <address>
+            <street>A. Diagonal</street>
+            <number>100</number>
+        </address>
+    </staff>

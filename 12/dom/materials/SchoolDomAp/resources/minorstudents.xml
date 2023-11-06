@@ -1,0 +1,17 @@
+<students>
+    <student id="s002">
+        <name>Joan Anton</name>
+        <surname>Martínez Ruiz</surname>
+        <emails>
+            <email>email002@hotmail.com</email>
+            <email>email2002@hotmail.com</email>
+        </emails>
+        <age>12</age>
+    </student>
+    <student id="s003">
+        <name>Maria</name>
+        <surname>Ruiz Ruiz</surname>
+        <emails/>
+        <age>13</age>
+    </student>
+</students>

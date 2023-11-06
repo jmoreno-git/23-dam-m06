@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="school.xsd">
+  <name>Institut Provençana</name>
+  <groups>
+    <group>
+      <name>DAM2</name>
+      <tutor>Daniel</tutor>
+      <curriculum>Desenvolupament aplicacions multiplataforma</curriculum>
+      <students>
+        <student id="s001">
+          <name>Maria Lluisa</name>
+          <surname>Pérez Lluch</surname>
+          <emails>
+            <email>email001@hotmail.com</email>
+          </emails>
+          <age>11</age>
+        </student>
+        <student id="s002">
+          <name>Joan Anton</name>
+          <surname>Martínez Ruiz</surname>
+          <emails>
+            <email>email002@hotmail.com</email>
+            <email>email2002@hotmail.com</email>
+          </emails>
+          <age>12</age>
+        </student>
+      </students>
+    </group>
+    <group>
+      <name>DAW2</name>
+      <tutor>Isabel</tutor>
+      <curriculum>Desenvolupament aplicacions web</curriculum>
+      <students>
+          <student id="s003">
+          <name>Maria</name>
+          <surname>Ruiz Ruiz</surname>
+          <emails>
+          </emails>
+          <age>13</age>
+        </student>
+      </students>
+    </group>   
+    <group>
+      <name>SMX1A</name>
+      <tutor>Joan Salvador</tutor>
+      <curriculum>Sistemes microinformàtics i xarxes</curriculum>
+      <students>
+      </students>
+    </group>  
+  </groups>
+</school>
