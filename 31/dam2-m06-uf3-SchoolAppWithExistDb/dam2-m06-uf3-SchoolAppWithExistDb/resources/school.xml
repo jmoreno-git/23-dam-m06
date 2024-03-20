@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='school.xsd'>
+    <groups>
+        <group id="g01">
+            <groupname>DAW</groupname>
+            <duration>2000</duration>
+            <description>Desenvolupament d'aplicacions web</description>
+            <enrolled>
+                <student id="alu1">
+                    <studentname>Name1</studentname>
+                    <age>21</age>
+                </student>
+                <student id="alu2">
+                    <studentname>Name2</studentname>
+                    <age>22</age>
+                </student>
+                <student id="alu3">
+                    <studentname>Name3</studentname>
+                    <age>23</age>
+                </student>
+            </enrolled>
+        </group>
+        <group id="g02">
+            <groupname>BIM</groupname>
+            <duration>600</duration>
+            <description>Modelatge de la informació de la cosntrucció</description>
+            <enrolled>
+            </enrolled>
+        </group>
+        <group id="g03">
+            <groupname>DAM</groupname>
+            <duration>2000</duration>
+            <description>esenvolupament d'aplicacions multiplataforma</description>
+            <enrolled>
+                <student id="alu4">
+                    <studentname>Name4</studentname>
+                    <age>18</age>
+                </student>
+                <student id="alu5">
+                    <studentname>Name5</studentname>
+                    <age>19</age>
+                </student>
+                <student id="alu6">
+                    <studentname>Name6</studentname>
+                    <age>20</age>
+                </student>
+                <student id="alu7">
+                    <studentname>Name7</studentname>
+                    <age>21</age>
+                </student>
+            </enrolled>
+        </group>
+    </groups>
+
+</school>

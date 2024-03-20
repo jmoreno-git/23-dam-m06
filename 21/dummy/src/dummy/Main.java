@@ -15,21 +15,21 @@ public class Main {
         System.out.println("Getting optional from data source");
         List<Optional<String>> result = getOptionalList();
         result.stream()
-                .filter(Optional::isPresent)
-                .map(Optional::get)
+                .filter(Optional::isPresent)  //filter non empty elements
+                .map(Optional::get)    //get the value
                 .forEach(System.out::println);
         System.out.println("Getting data from data source");
-        List<String> result2 = getObjectList();
+        List<String> result2 = getObjectList();  //list of objects with possibly null values
         result2.stream()
-                .map(Optional::ofNullable)
-                .filter(Optional::isPresent)
-                .map(Optional::get)
+                .map(Optional::ofNullable)  //create an optional for each element
+                .filter(Optional::isPresent)  //filter non empty elements
+                .map(Optional::get)     //get the value
                 .forEach(System.out::println);
         System.out.println("Getting data from data source and converting to optionals");
-        List<String> result3 = getObjectList();
+        List<String> result3 = getObjectList();   //list of objects with possibly null values
         List<Optional<String>> result4 = result3.stream()
-                .map(Optional::ofNullable)
-                .toList();
+                .map(Optional::ofNullable)   //create an optional for each element
+                .toList();  //convert to list
         result4.forEach(System.out::println);
     }
     

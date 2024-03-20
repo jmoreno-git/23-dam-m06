@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="school" type="typeSchool"/>
+    
+    <xs:complexType name="typeSchool">
+        <xs:sequence>
+            <xs:element name="groups" type="typeGroups"/>
+          </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="typeGroups">
+        <xs:sequence>
+            <xs:element name="group" type="typeGroup" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="typeStudents">
+        <xs:sequence>
+            <xs:element name="student" type="typeStudent" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="typeGroup" mixed="true">
+        <xs:sequence>
+            <xs:element name="groupname" type="xs:string"/>
+            <xs:element name="duration" type="xs:positiveInteger"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="enrolled" type="typeStudents"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>    
+    
+    <xs:complexType name="typeStudent" mixed="true">
+        <xs:sequence>
+            <xs:element name="studentname" type="xs:string"/>
+            <xs:element name="age" type="xs:positiveInteger"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+       
+</xs:schema>
+

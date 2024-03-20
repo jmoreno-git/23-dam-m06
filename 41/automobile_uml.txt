@@ -1,0 +1,16 @@
+------------------------------------------
+Car
+------------------------------------------
+- license: String (identificador únic)
+- brand: String
+- model: String
+- fuelType: FuelType (enum)
+
+------------------------------------------
++ start(): boolean
++ stop(): boolean
++ accelerate(deltaSpeed: double): boolean
++ changeEngine(engine: int): boolean
+...
+
+------------------------------------------
